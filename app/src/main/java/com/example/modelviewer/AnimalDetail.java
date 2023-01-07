@@ -47,6 +47,7 @@ public class AnimalDetail extends AppCompatActivity {
                 Intent intent = new Intent(v.getContext(), ARView.class);
                 intent.putExtra("modelSrc",animalData.model);
                 intent.putExtra("modelName", animalData.name);
+                intent.putExtra("modelScale",animalData.scale);
                 v.getContext().startActivity(intent);
             }
         });

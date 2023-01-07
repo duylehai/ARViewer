@@ -31,6 +31,7 @@ import com.google.ar.sceneform.rendering.Renderable;
 import com.google.ar.sceneform.rendering.ViewRenderable;
 import com.google.ar.sceneform.ux.ArFragment;
 import com.google.ar.sceneform.ux.BaseArFragment;
+import com.google.ar.sceneform.ux.ScaleController;
 import com.google.ar.sceneform.ux.TransformableNode;
 
 import java.io.File;
@@ -49,6 +50,7 @@ public class ARView extends AppCompatActivity implements
     private ArFragment arFragment;
     private Renderable model;
     private ViewRenderable viewRenderable;
+    private Float scaleVal = new Float(1.0);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +69,9 @@ public class ARView extends AppCompatActivity implements
         Log.d("creation","okay");
         String modelSrc = getIntent().getStringExtra("modelSrc");
         String modelName = getIntent().getStringExtra("modelName");
+        String modelScale = getIntent().getStringExtra("modelScale");
         int resourceId = this.getResources().getIdentifier(modelSrc, "raw", this.getPackageName());
+        this.scaleVal = Float.parseFloat(modelScale);
         //TextView modelTitle = (TextView) findViewById(R.id.view_model_title);
         //modelTitle.setText(modelName);
         Log.d("creation", Integer.toString(resourceId));
@@ -150,7 +154,12 @@ public class ARView extends AppCompatActivity implements
 
         // Create the transformable model and add it to the anchor.
         TransformableNode model = new TransformableNode(arFragment.getTransformationSystem());
+        model.getScaleController().setEnabled(true);
+        model.getScaleController().setMinScale(this.scaleVal);
+        model.setLocalScale(new Vector3(this.scaleVal, this.scaleVal, this.scaleVal));
+        model.setWorldScale(new Vector3(this.scaleVal, this.scaleVal, this.scaleVal));
         model.setParent(anchorNode);
+
         model.setRenderable(this.model)
                 .animate(true).start();
         model.select();

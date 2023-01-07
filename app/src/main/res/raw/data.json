@@ -8,7 +8,8 @@
     "details": "The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange fur with a white underside. An apex predator, it primarily preys on ungulates, such as deer and wild boar. It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat to support its requirements for prey and rearing of its offspring. Tiger cubs stay with their mother for about two years and then become independent, leaving their mother's home range to establish their own.",
     "model": "tiger_model",
     "size": "250 to 390 cm",
-    "weight": "90 to 300 kg"
+    "weight": "90 to 300 kg",
+    "scale": "1.0"
   },
   {
     "name": "Penguin",
@@ -19,7 +20,8 @@
     "details": "Penguins are a group of aquatic flightless birds. They live almost exclusively in the Southern Hemisphere: only one species, the Galápagos penguin, is found north of the Equator. Highly adapted for life in the water, penguins have countershaded dark and white plumage and flippers for swimming. Most penguins feed on krill, fish, squid and other forms of sea life which they catch with their bills and swallow it whole while swimming. A penguin has a spiny tongue and powerful jaws to grip slippery prey.[4]",
     "model": "penguin_model",
     "size": "30 to 33 cm",
-    "weight": " 1.2 to 1.3 kg"
+    "weight": " 1.2 to 1.3 kg",
+    "scale": "0.0025"
   },
   {
     "name": "Bear",
@@ -30,7 +32,8 @@
     "details": "Bears are carnivoran mammals of the family Ursidae. They are classified as caniforms, or doglike carnivorans. Although only eight species of bears are extant, they are widespread, appearing in a wide variety of habitats throughout the Northern Hemisphere and partially in the Southern Hemisphere. Bears are found on the continents of North America, South America, Europe, and Asia. Common characteristics of modern bears include large bodies with stocky legs, long snouts, small rounded ears, shaggy hair, plantigrade paws with five nonretractile claws, and short tails.",
     "model": "bear_model",
     "size": "2.4 to 3 m",
-    "weight": " 350 to 700 kg"
+    "weight": " 350 to 700 kg",
+    "scale": "0.015"
   },
   {
     "name": "Crocodile",
@@ -41,7 +44,8 @@
     "details": "Crocodiles (family Crocodylidae) or true crocodiles are large semiaquatic reptiles that live throughout the tropics in Africa, Asia, the Americas and Australia. The term crocodile is sometimes used even more loosely to include all extant members of the order Crocodilia, which includes the alligators and caimans (family Alligatoridae), the gharial and false gharial (family Gavialidae) among other extinct taxa.",
     "model": "crocodile_model",
     "size": "1.5 to 1.9 m",
-    "weight": " can over 900 kg"
+    "weight": " can over 900 kg",
+    "scale": "0.3"
   },
   {
     "name": "Horse",
@@ -52,7 +56,8 @@
     "details": "The horse (Equus ferus caballus) is a domesticated, one-toed, hoofed mammal. It belongs to the taxonomic family Equidae and is one of two extant subspecies of Equus ferus. The horse has evolved over the past 45 to 55 million years from a small multi-toed creature, Eohippus, into the large, single-toed animal of today. Humans began domesticating horses around 4000 BCE, and their domestication is believed to have been widespread by 3000 BCE. Horses in the subspecies caballus are domesticated, although some domesticated populations live in the wild as feral horses. These feral populations are not true wild horses, as this term is used to describe horses that have never been domesticated. There is an extensive, specialized vocabulary used to describe equine-related concepts, covering everything from anatomy to life stages, size, colors, markings, breeds, locomotion, and behavior.",
     "model": "horse_model",
     "size": " 142 to 163 cm",
-    "weight": " 380 to 550 kg"
+    "weight": " 380 to 550 kg",
+    "scale": "0.8"
   },
   {
     "name": "Lion",
@@ -63,6 +68,7 @@
     "details": "The lion (Panthera leo) is a large cat of the genus Panthera native to Africa and India. It has a muscular, broad-chested body; short, rounded head; round ears; and a hairy tuft at the end of its tail. It is sexually dimorphic; adult male lions are larger than females and have a prominent mane. It is a social species, forming groups called prides. A lion's pride consists of a few adult males, related females, and cubs. Groups of female lions usually hunt together, preying mostly on large ungulates. The lion is an apex and keystone predator; although some lions scavenge when opportunities occur and have been known to hunt humans, lions typically do not actively seek out and prey on humans.",
     "model": "lion_model",
     "size": " 160 to 184 cm",
-    "weight": " 110–120 kg"
+    "weight": " 110–120 kg",
+    "scale": "0.03"
   }
 ]

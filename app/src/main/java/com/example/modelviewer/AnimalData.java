@@ -10,6 +10,15 @@ public class AnimalData {
     protected String model;
     protected String size;
     protected String weight;
+    protected String scale;
+
+    public String getScale() {
+        return scale;
+    }
+
+    public void setScale(String scale) {
+        this.scale = scale;
+    }
 
     public String getSize() {
         return size;
