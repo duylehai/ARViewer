@@ -14,8 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("creation","okay");
-        Intent intent = new Intent(this, ARView.class);
-        intent.setData(Uri.parse("https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb"));
+        //Intent intent = new Intent(this, ARView.class);
+        //intent.setData(Uri.parse("https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb"));
+        Intent intent = new Intent(this, Welcome.class);
         startActivity(intent);
     }
 }

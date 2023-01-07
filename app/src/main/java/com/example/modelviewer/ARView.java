@@ -5,6 +5,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -31,6 +33,10 @@ import com.google.ar.sceneform.ux.ArFragment;
 import com.google.ar.sceneform.ux.BaseArFragment;
 import com.google.ar.sceneform.ux.TransformableNode;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
 import java.net.URI;
 
@@ -59,8 +65,15 @@ public class ARView extends AppCompatActivity implements
             }
         }
         Log.d("creation","okay");
-        Uri modelUri = getIntent().getData();
-        loadModels(modelUri);
+        String modelSrc = getIntent().getStringExtra("modelSrc");
+        String modelName = getIntent().getStringExtra("modelName");
+        int resourceId = this.getResources().getIdentifier(modelSrc, "raw", this.getPackageName());
+        //TextView modelTitle = (TextView) findViewById(R.id.view_model_title);
+        //modelTitle.setText(modelName);
+        Log.d("creation", Integer.toString(resourceId));
+        Log.d("creation", Integer.toString(resourceId));
+        Log.d("creation", Integer.toString(resourceId));
+        loadModels(resourceId);
     }
 
     @Override
@@ -88,10 +101,11 @@ public class ARView extends AppCompatActivity implements
         arSceneView.setFrameRateFactor(SceneView.FrameRate.FULL);
     }
 
-    public void loadModels(Uri modelUri) {
+    public void loadModels(int modelSrc){
+        //modelUri =  Uri.fromFile(in);
         WeakReference<ARView> weakActivity = new WeakReference<>(this);
         ModelRenderable.builder()
-                .setSource(this, modelUri)
+                .setSource(this, modelSrc)
                 .setIsFilamentGltf(true)
                 .setAsyncLoadEnabled(true)
                 .build()
@@ -106,6 +120,7 @@ public class ARView extends AppCompatActivity implements
                             this, "Unable to load model", Toast.LENGTH_LONG).show();
                     return null;
                 });
+
         ViewRenderable.builder()
                 .setView(this, R.layout.view_model_title)
                 .build()

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9ed6f">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/kavoon"
+            android:text="Zuu'topia"
+            android:textColor="#ec1bf7"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#e9ed6f">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/animal_list_button_gifview"
+                android:layout_width="234dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/lion_gif" />
+
+            <Button
+                android:id="@+id/animal_list_button"
+                android:layout_width="100dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/kavoon"
+                android:background="@drawable/boder2"
+                android:text="@string/animal_list_button_string" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#e9ed6f">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/zoo_location_list_button_gifview"
+                android:layout_width="234dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/sloth_gif" />
+
+            <Button
+                android:id="@+id/zoo_location_listbutton"
+                android:layout_width="100dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/kavoon"
+                android:background="@drawable/boder2"
+                android:text="@string/zoo_location_list_button_string" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

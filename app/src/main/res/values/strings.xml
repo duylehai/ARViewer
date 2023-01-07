@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translation_description="App Name [CHAR LIMIT=40]">AR glTF</string>
+    <string name="app_name">Zuutopia</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="animal_list_button_string">See us</string>
+    <string name="zoo_location_list_button_string">Find us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="ListOfParkNames">
+        <item>Thảo cầm viên</item>
+        <item>Đại Nam zoo</item>
+        <item>Minh\'s Tour Aquarim</item>
+        <item>Vita Garden Mini-Zoo</item>
+        <item>Hanoi Zoological Gardens</item>
+
+    </string-array>
+
+    <string-array name="listOfLatitudes">
+        <item format="float">10.785048368444306 </item>
+        <item format="float">11.062470354630625 </item>
+        <item format="float">10.775398854767152 </item>
+        <item format="float">11.049006017255273 </item>
+        <item format="float">21.422249925797132 </item>
+
+    </string-array>
+
+    <string-array name="listOfLongtitudes">
+        <item format="float">106.70782027847356 </item>
+        <item format="float">106.62589925324632 </item>
+        <item format="float">106.68604519656246 </item>
+        <item format="float">108.2614480306322</item>
+        <item format="float">105.7669019552124 </item>
+
+
+    </string-array>
+
+    <string-array name="ListOfAddresses">
+        <item >2 Nguyễn Bỉnh Khiêm Quận 1, Thành phố Hồ Chí Minh </item>
+        <item >Hiep An, Thu Dau Mot, Binh Duong Province </item>
+        <item >360 Nguyen Dinh Chieu P4, Quan 3, Thành phố Hồ Chí Minh </item>
+        <item >Fairy Stream Canyon, Huỳnh Thúc Kháng, Phường Hàm Tiến, Thành phố Phan Thiết, Bình Thuận </item>
+        <item >Thu le Ba Dinh District, Hà Nội </item>
+
+
+    </string-array>
+
+    <array name="ParkImages">
+        <item>@drawable/thaocamvien</item>
+        <item>@drawable/dainamzoo</item>
+        <item>@drawable/minhtouraquarim</item>
+        <item>@drawable/vita</item>
+        <item>@drawable/hanoi</item>
+
+
+    </array>
+
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="normal_map">Normal map</string>
+    <string name="hybrid_map">Hybrid map</string>
+    <string name="satellite_map">Satellite_map</string>
+    <string name="terrain_map">Terrain map</string>
+    <string name="lat_long_snippet">Lat: %1$.5f, Long: %2$.5f</string>
+    <string name="dropped_pin">dropped_pin</string>
+    <string name="poi">poi</string>
+
 </resources>
