@@ -9,6 +9,6 @@ Clone the project in android studio then build it
 
 # References
 
-(htps://github.com/SceneView/sceneform-android)
+(https://github.com/SceneView/sceneform-android)
 (https://sketchfab.com)
 (https://zoogif.com)
